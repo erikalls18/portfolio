@@ -12,7 +12,7 @@ var projects= [
     "image" :"/images/Screenshot_appG1C.png",
     "description": "This application is designed to allow users to efficiently store and retrieve blood sugar level data. It enables users to input and access personal information, including glucose levels and medications. The purpose of this app is to help users maintain a record of their levels over time, facilitating a better understanding of their progress.",
     "technologies": "Android Studio, Java  and Room",
-    "images2": [" /images/glucontrol1.png", "/images/glucontrol2.png", "/images/glucontrol3.png", "/images/glucontrol4.png", "/images/glucontrol5.png"]
+   /* "images2": [" /images/glucontrol1.png", "/images/glucontrol2.png", "/images/glucontrol3.png", "/images/glucontrol4.png", "/images/glucontrol5.png"]*/
 
 },
 {    "id": "3",

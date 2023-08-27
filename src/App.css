@@ -17,6 +17,10 @@ body {
   background: linear-gradient(to right, rgb(29, 28, 28),rgb(75, 19, 19) );
  
 }
+.app-container{
+  overflow: hidden;
+}
+
 
 .nav  ul{
   list-style: none;
@@ -201,7 +205,7 @@ nav ul:first-child {
   /*width: 80%;*/
   margin: auto;
   text-align: center;
-  max-width: 90%;
+  max-width: 80%;
   margin-top: 50px;
   display: grid;
   grid-gap: 40px;
