@@ -210,7 +210,7 @@ nav ul:first-child {
   display: grid;
   grid-gap: 40px;
   grid-template-columns: repeat(3, minmax(220px, 1fr));
-  background-color: red;
+  
  
 }
 
@@ -223,7 +223,7 @@ nav ul:first-child {
   flex-direction: column;
   text-align: center;
   transition: transform 0.3s ease;
-  background-color: aqua;
+  
  
 }
 .card-project:hover {
@@ -299,25 +299,34 @@ nav ul:first-child {
 .button-details{
  /*margin-left: 25px;*/
  width: 100%;
- padding: 8px;
+ padding: 6px;
  background-color: rgb(126, 63, 82);
  color: white;
  font-size: 17px;
  border-radius: 0.5rem;
 
 }
-
+.container-buttons{
+  display: inline-block; /* Usamos flexbox para colocarlos en línea */
+ /* Espacio entre los botones */
+  margin: 10px 0;
+  text-align: center;
+}
 .close-modal{
-  position: absolute;
-  top: 10px;
+ /* position: absolute;*/
+ 
   right: 10px;
   background-color: rgb(126, 63, 82);
   color: white;
+  margin: auto;
+  padding: 8px;
+  border-radius: 0.5rem;
+  font-size: 17px;
 }
 
 .button-source{
   margin: auto;
-  padding: 12px;
+  padding: 8px;
   background-color: rgb(126, 63, 82);
   color: white;
  font-size: 17px;
@@ -335,6 +344,7 @@ nav ul:first-child {
   font-style: italic;
   font-size: 15px;
   margin-top: 15px;
+  margin-bottom: 12%;
  
 }
 
@@ -436,6 +446,10 @@ nav ul:first-child {
     text-align: justify;
   }
 
+  .message{
+    margin-bottom: 25%;
+  }
+
   /* Ajustes para otros elementos si es necesario */
 }
 
@@ -534,13 +548,17 @@ nav a{
     font-size: 20px;
     width: 90%;
     margin: auto;
-    margin-top: 120px;
+    margin-top: 10px;
     margin-bottom: 20px;
   }
   .img-contact{
     margin-right: 15px;
   }
 
+.card-tech-modal{
+  margin-left: 10px;
+  margin-right: 10px;
+} 
   
 
 }
@@ -640,7 +658,12 @@ nav li a {
     font-size: 20px;
     width: 90%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 10px;
+  }
+
+  .button-source, .close-modal{
+    font-size: 15px;
+    padding: 8px;
   }
 
   /* Ajustes para otros elementos si es necesario */

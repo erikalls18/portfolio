@@ -57,8 +57,10 @@ function Projects() {
             
             <p className="description-modal">{selectedProject.description}</p>
             <p className='card-tech-modal'><strong>Technologies used:</strong> {selectedProject.technologies}</p>
-            <button  className="button-source"onClick={handleSource} >Source</button>
-            <button onClick={closeModal} className="close-modal">X</button>
+            <div className='container-buttons'>
+              <button  className="button-source"onClick={handleSource} >Source</button>
+              <button onClick={closeModal} className="close-modal">Close</button>
+            </div>
           </div>
           
         </div>
