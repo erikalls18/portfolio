@@ -3,14 +3,12 @@ html{
 }
 body {
 
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  margin: 0%;
-  padding: 0%;
-  
-}
 
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
 /*CSS Navegacion*/
 .navbar-container{
   display: flex;
@@ -79,29 +77,35 @@ nav ul:first-child {
   margin-left: 1em;
 }
 
+.background-img{
+  height: 50%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
 .main-content-home{
-  background-image: url("../public/images/background_main.jpg"); /* Cambia la ruta por la ubicación de tu imagen */
+  background-image: url("../public/images/background_main.jpg"); 
   background-size: cover;
   background-position: center;
   width: 100vw;
   height: 100vh;
   text-align: center;
   margin:0px;
-
+  position: fixed;
   text-align: center;
-  position: relative; /* Establece el posicionamiento relativo */
+  position: relative; 
   overflow: hidden;
 
 }
 
 .title{
-   /* Usar un color con transparencia para el fondo del título */
-  color: white; /* Cambiar el color del texto */
+   
+  color: white; 
   padding: 10px;
-  position: absolute; /* Establece el posicionamiento absoluto */
-  top: 50%; /* Alinea el título verticalmente en el centro */
-  left: 50%; /* Alinea el título horizontalmente en el centro */
-  transform: translate(-50%, -50%); /* Centra el título correctamente */
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
   margin: 0;
 }
 
@@ -109,10 +113,10 @@ nav ul:first-child {
   
  color: rgb(10, 10, 10); 
  padding: 10px;
- position: absolute; /* Establece el posicionamiento absoluto */
- top: 60%; /* Alinea el título verticalmente en el centro */
- left: 50%; /* Alinea el título horizontalmente en el centro */
- transform: translate(-50%, -50%); /* Centra el título correctamente */
+ position: absolute; 
+ top: 60%; 
+ left: 50%; 
+ transform: translate(-50%, -50%); 
  margin: 0;
  font-weight: bold;
 }
@@ -125,7 +129,6 @@ nav ul:first-child {
   left: 0;
   width: 100%;
   height: 100%;
-  /*background-color: rgba(0, 0, 0, 0.1); */
 }
 
 /*CSS About */
@@ -151,10 +154,11 @@ nav ul:first-child {
   width: 80%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5%;
 }
 .container-soft-tech,
 .container-data-tech{
-  flex: 1; /* Distribuye el espacio disponible entre los contenedores */
+  flex: 1; 
   border: 1px solid #ccc; 
   margin: 10px;
   text-align: center;
@@ -179,13 +183,12 @@ nav ul:first-child {
 .footer{
   
   color: white;
-  /*display: flex;*/
   background: linear-gradient(to right, rgb(29, 28, 28), rgb(75, 19, 19) );
   text-align: center;
   padding: 10px;
-  /*position: fixed;*/
+  position: fixed;
   bottom: 0%;
-  /*overflow: auto;*/
+  overflow: auto;
   width: 100%;
   font-weight: bold;
   font-family: 'Tinos', serif;
@@ -202,7 +205,6 @@ nav ul:first-child {
 /*CSS projects*/
 
 .container-cards {
-  /*width: 80%;*/
   margin: auto;
   text-align: center;
   max-width: 80%;
@@ -216,7 +218,6 @@ nav ul:first-child {
 
 .card-project {
   box-sizing: border-box;
- /* background: rgb(243, 216, 216);*/
   padding: 10px;
   border-radius: 5px;
   display: flex;
@@ -234,12 +235,6 @@ nav ul:first-child {
 
 .container-projects{
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  flex: 1;
-
- 
   
 }
 @keyframes fade-in {
@@ -253,12 +248,11 @@ nav ul:first-child {
 
 .img-card {
   width: 100%;
-  /*width: 500px;*/
+ 
   margin-top: 10px;
   object-fit: cover;
- /* border-radius: 0.5rem;*/
   border:solid 1px;
-  /*margin-left: 8px;*/
+  
 }
 
 /*CSS Modal*/
@@ -277,7 +271,7 @@ nav ul:first-child {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  background-color: rgba(0, 0, 0, 0.5); 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -287,7 +281,7 @@ nav ul:first-child {
 
 .modal-content {
   background-color: white;
-  width: 50%; /* Ocupa el 50% del ancho de la pantalla */
+  width: 50%; 
   height: 80%;
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -307,8 +301,7 @@ nav ul:first-child {
 
 }
 .container-buttons{
-  display: inline-block; /* Usamos flexbox para colocarlos en línea */
- /* Espacio entre los botones */
+  display: inline-block; 
   margin: 10px 0;
   text-align: center;
 }
@@ -353,8 +346,7 @@ nav ul:first-child {
 }
 
 .img-carrusel{
-  
-  max-width: 30%; /* Ajusta este valor según tus necesidades */
+  max-width: 30%; 
   max-height: 40%;
   margin-top: 10px;
   margin: auto;
@@ -370,8 +362,6 @@ nav ul:first-child {
 .container-contact{
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  flex: 1;
   
 }
 
@@ -423,7 +413,7 @@ nav ul:first-child {
 
   .modal-content {
     background-color: white;
-    width: 50%; /* Ocupa el 50% del ancho de la pantalla */
+    width: 50%; 
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     position: relative;
@@ -439,7 +429,6 @@ nav ul:first-child {
   }
   .description-modal{
     font-size: 15px;
-    /*justify-content:center;*/
     margin-top: 5px;
     margin-left: 5px;
     margin-right:5px;
@@ -450,7 +439,6 @@ nav ul:first-child {
     margin-bottom: 25%;
   }
 
-  /* Ajustes para otros elementos si es necesario */
 }
 
 
@@ -491,8 +479,6 @@ nav a{
 }
   .container-technologies {
     flex-direction: column;
-   /* margin-left: 8px;
-    margin-right: 2px;*/
     margin: 0%;
     padding: 0%;
     margin-bottom: 50px;
@@ -524,16 +510,12 @@ nav a{
 
   .modal-content {
     background-color: white;
-    width: 85%; /* Ocupa el 50% del ancho de la pantalla */
+    width: 85%; 
     padding: 0;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     position: relative;
-    
-    
-    
+  
   }
-
-
   .description-modal{
     font-size: 15px;
     margin-top: 5px;
@@ -588,8 +570,8 @@ nav li {
     
 }
 nav li a {
-  display: block; /* Para mantener la apariencia de los enlaces */
-  padding: 10px 0; /* Ajusta los valores de padding según sea necesario */
+  display: block; 
+  padding: 10px 0;
 }
 
 
@@ -638,7 +620,7 @@ nav li a {
 
   .modal-content {
     background-color: white;
-    width: 70%; /* Ocupa el 50% del ancho de la pantalla */
+    width: 70%; 
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     position: relative;
@@ -666,5 +648,5 @@ nav li a {
     padding: 8px;
   }
 
-  /* Ajustes para otros elementos si es necesario */
+ 
 }

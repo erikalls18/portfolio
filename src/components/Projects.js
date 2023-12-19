@@ -18,7 +18,7 @@ function Projects() {
     setModalOpen(false);
   };
   const handleSource = () => {
-    window.open("https://github.com/erikalls18/FullStack-Applicaction/tree/master/finalproject3600", "_blank"); 
+    window.open(selectedProject.link, "_blank"); 
   };
     
      return (
@@ -31,8 +31,9 @@ function Projects() {
        
        {projects.map((project, id) => (
             <div key={project.id} className="card-project" onClick={() => openModal(project)}>
-                 <h3 className='tittle-project'>{project.name}</h3>
+                 
                 <img src={project.image} alt={project.name}className="img-card" />
+                <p className='tittle-project'>{project.name}</p>
                {/*<button onClick={() => openModal(project)}  className="button-details"> Show Details</button>*/}
             </div>
             ))}
